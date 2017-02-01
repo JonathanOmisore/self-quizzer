@@ -3,7 +3,7 @@ from nltk import tokenize
 
 def main():
     notes = input("Enter notes file \n ") #User enters file containing notes
-    wordsidontwant = ["the", "or", "and", "in", "this", "on", "of","is","to","will","by"] #Don't want any common prepositions or articles
+    wordsidontwant = ["the", "or", "a", "and", "in", "this", "on", "of","is","to","will","by"] #Don't want any common prepositions or articles
     with open(notes, "r") as file: #While the file is open
         notes = file.read() #Read file
         words = tokenize.sent_tokenize(notes) #Convert paragraphs into an array containing sentences
